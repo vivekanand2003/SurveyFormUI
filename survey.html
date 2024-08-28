@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="layer1">
+        <h2>Survey Form</h2>
+        <form class="frm" action="#">
+            <h4>Let us know how we can improve freeCodeCamp</h4>
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="Enter your Email">
+            </div>
+            <div>
+                <label for="age">Age: </label>
+                <input type="number" id="age" placeholder="Age">
+            </div>
+
+            <div class="roleclass">
+                <label for="role">Which option best describes your current role? </label>
+                <select name="role" id="role">
+                    <option value="">--Please choose an option--</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="developer">Developer</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="recommend">How likely is it that you would recommend freeCodeCamp to a friend?</label>
+                <div id="recommend">
+                    <input type="radio" name="recommend" id="definitely" value="definitely">
+                    <label for="definitely">Definitely</label>
+                    <input type="radio" name="recommend" id="maybe" value="maybe">
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" name="recommend" id="nsure" value="not sure">
+                    <label for="nsure">Not sure</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="fcc-fav">What do you like most in FCC: </label>
+                <select name="fcc-fav" id="fcc-fav">
+                    <option value="select">Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open-source">Open Source</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="future">Things that should be improved in the future (Check all that apply)</label>
+                <div id="future">
+                    <input type="checkbox" name="improve" id="front" value="front-end">
+                    <label for="front">Front-end Projects</label>
+                    <input type="checkbox" name="improve" id="back" value="back-end">
+                    <label for="back">Back-end Projects</label>
+                    <input type="checkbox" name="improve" id="data" value="data-visualization">
+                    <label for="data">Data Visualization</label>
+                </div>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
